@@ -7,7 +7,7 @@
 </ul>
 <ng-template #loading>
   <ul [@listAnimation]="loadingMovies">
-    <li *ngFor="let movie of loadingMovies" [@listAnimation]="movies">
+    <li *ngFor="let movie of loadingMovies" [@listAnimation]="loadingMovies">
       <img src="/assets/movieNight.png">
     </li>
   </ul>
