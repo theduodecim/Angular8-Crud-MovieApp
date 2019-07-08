@@ -1,0 +1,14 @@
+<ul *ngIf="movies$ | async as movies; else loading" [@listAnimation]="movies">
+  <li *ngFor="let movie of movies" [@listAnimation]="movies">
+    <a [routerLink]="movie.id">
+      <img [src]="movie.image">
+    </a>
+  </li>
+</ul>
+<ng-template #loading>
+  <ul [@listAnimation]="loadingMovies">
+    <li *ngFor="let movie of loadingMovies" [@listAnimation]="movies">
+      <img src="/assets/movieNight.png">
+    </li>
+  </ul>
+</ng-template>

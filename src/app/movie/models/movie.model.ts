@@ -1,0 +1,55 @@
+export interface Movie {
+    id: number;
+    name: string;
+    genre: string;
+    image: string;
+    releaseYear: string;
+}
+
+
+export const movies: Movie[] = [
+    {
+        id: 1,
+        name: 'Black Panther',
+        genre: 'Action',
+        // tslint:disable-next-line:max-line-length
+        image: 'https://amc-theatres-res.cloudinary.com/image/upload/f_auto,fl_lossy,h_600,q_auto,w_400/v1/amc-cdn/production/2/movies/45800/45839/PosterDynamic/37731.jpg',
+        releaseYear: '2017'
+    },
+    {
+        id: 2,
+        name: 'X-MEN Apocalypse',
+        genre: 'Scfy Action',
+        image: 'https://www.comicmoviedb.com/wp-content/uploads/2016/06/X-Men_-Apocalypse-Movie-Poster-400x600.jpg',
+        releaseYear: '2018'
+    },
+    {
+        id: 3,
+        name: 'Fantastic Beasts The Crimes Of Grindelwald',
+        genre: 'Adventure',
+        // tslint:disable-next-line:max-line-length
+        image: 'https://cdn11.bigcommerce.com/s-pfbbr25tq3/images/stencil/400x600/products/3796/4817/Fantasticbeaststhecrimesofgrinwald__16773.1551306106.jpg?c=2',
+        releaseYear: '2016'
+    },
+    {
+        id: 4,
+        name: 'The Prince of Egypt',
+        genre: 'Animated Drama',
+        image: 'https://www.qbchurch.org/wp-content/uploads/2019/05/prince_of_egypt_movie.jpg',
+        releaseYear: '1995'
+    },
+    {
+        id: 5,
+        name: 'The Addams Familly',
+        genre: 'Commedy',
+        image: 'https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1540483994-91972901-013d-42b6-8070-abc86901e9f5.jpg',
+        releaseYear: '1993'
+    },
+    {
+        id: 6,
+        name: 'The Lego Movie 2: The Second Part',
+        genre: 'Adventure 3D',
+        image: 'https://cdn2-www.comingsoon.net/assets/uploads/2019/02/MV5BMTkyOTkwNDc1N15BMl5BanBnXkFtZTgwNzkyMzk3NjM@._V1_-400x600.jpg',
+        releaseYear: '2010'
+    }
+];
